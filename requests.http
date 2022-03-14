@@ -1,0 +1,30 @@
+GET http://localhost:3000/songs
+
+###
+GET http://localhost:3000/songs/2
+
+###
+POST http://localhost:3000/songs
+content-type: application/json
+
+  {
+    "input_title": "Champagne Supernova",
+    "input_album": "(Whats the Story) Morning Glory?",
+    "input_artist": "Oasis",
+    "input_year": "1995"
+  }
+
+###
+  PATCH http://localhost:3000/songs/2
+  content-type: application/json
+
+  {
+    "title": "Nail Tech",
+    "album": "Nail Tech (-Single)",
+    "artist": "Jack Harlow",
+    "year": "2022"
+  }
+
+
+  ###
+  
